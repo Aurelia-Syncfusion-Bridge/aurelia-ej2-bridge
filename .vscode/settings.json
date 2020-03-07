@@ -1,5 +1,21 @@
 {
     "typescript.tsdk": "node_modules/typescript/lib",
     "html.suggest.angular1": false,
-    "html.suggest.ionic": false
+    "html.suggest.ionic": false,
+    "cSpell.words": [
+      "Gitter",
+      "Syncfusion",
+      "chunkhash",
+      "datepicker",
+      "devtool",
+      "lcovonly",
+      "predoc",
+      "preprepare",
+      "preprocessors",
+      "quotemark",
+      "sourcemap",
+      "symlink",
+      "tsnode",
+      "typedoc"
+    ]
   }

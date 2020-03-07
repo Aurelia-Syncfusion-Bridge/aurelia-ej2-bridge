@@ -1,0 +1,4 @@
+{
+  "name": "aurelia-ej2-bridge",
+  "main": "dist/amd/aurelia-ej2-bridge.d.ts"
+}

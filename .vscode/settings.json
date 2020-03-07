@@ -10,6 +10,7 @@
       "datepicker",
       "devtool",
       "lcovonly",
+      "postversion",
       "prebuild",
       "predoc",
       "preprepare",

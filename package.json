@@ -32,8 +32,7 @@
     "bump-version": "npm --no-git-tag-version version",
     "preprepare-release": "cross-env npm run test",
     "prepare-release": "cross-env npm run changelog && npm run build && npm run doc",
-    "version": "standard-changelog && git add CHANGELOG.md",
-    "postversion": "git push && git push --tags && npm publish"
+    "release": "lerna publish --conventional-commits --dist-tag=next"
   },
   "dependencies": {
     "aurelia-binding": "^2.5.2",

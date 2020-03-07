@@ -1,6 +1,7 @@
 {
   "name": "aurelia-ej2-bridge-dev-app",
   "version": "0.0.1",
+  "private": false,
   "description": "",
   "main": "index.js",
   "scripts": {

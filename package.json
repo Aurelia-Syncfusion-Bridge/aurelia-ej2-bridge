@@ -1,7 +1,7 @@
 {
   "name": "aurelia-ej2-bridge",
   "private": false,
-  "version": "0.0.2-alpha.2",
+  "version": "0.0.2-alpha.3",
   "publishConfig": {
     "access": "public"
   },

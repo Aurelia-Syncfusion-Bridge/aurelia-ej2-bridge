@@ -1,6 +1,9 @@
 {
   "name": "aurelia-ej2-bridge",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "http://logoui.co.il/en",
   "bugs": {
     "url": "https://github.com/Aurelia-Syncfusion-Bridge/aurelia-ej2-bridge.git/issues"

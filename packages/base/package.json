@@ -1,6 +1,6 @@
 {
   "name": "@aurelia-ej2-bridge/base",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "description": "Base component for Aurelia Ej2 bridge",
   "keywords": [

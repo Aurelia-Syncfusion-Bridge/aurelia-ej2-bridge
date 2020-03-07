@@ -12,7 +12,7 @@
   "typings": "dist/commonjs/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aurelia-Syncfusion-Bridge/aurelia-ej2-bridge"
+    "url": "https://github.com/Aurelia-Syncfusion-Bridge/aurelia-ej2-bridge.git"
   },
   "scripts": {
     "lint": "cross-env tslint --project tsconfig.json",

@@ -39,3 +39,4 @@ node_modules
 /test/coverage-karma
 dist
 scripts
+lerna-debug.log

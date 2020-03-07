@@ -7,7 +7,7 @@ const project = require('./aurelia_project/aurelia.json');
 const { AureliaPlugin, ModuleDependenciesPlugin } = require('aurelia-webpack-plugin');
 const { ProvidePlugin } = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin  = require('clean-webpack-plugin');
 
 // config helpers:
 const ensureArray = (config) => config && (Array.isArray(config) ? config : [config]) || [];
@@ -42,7 +42,53 @@ module.exports = ({ production } = {}, {extractCss, analyze, tests, hmr, port, h
     modules: [srcDir, 'node_modules'],
     // Enforce single aurelia-binding, to avoid v1/v2 duplication due to
     // out-of-date dependencies on 3rd party aurelia plugins
-    alias: { 'aurelia-binding': path.resolve(__dirname, 'node_modules/aurelia-binding') }
+    alias: { 
+      'aurelia-binding': path.resolve(__dirname, 'node_modules/aurelia-binding'),
+      'src': path.resolve(__dirname, 'src'),
+      // alias all aurelia packages to parent node_modules,
+        // so packages & core modules will use the same version of core modules
+        ...([
+          'polyfills',
+          'dependency-injection',
+          'loader',
+          'pal',
+          'pal-browser',
+          'metadata',
+          'logging',
+          'binding',
+          'path',
+          'framework',
+          'history',
+          'history-browser',
+          'event-aggregator',
+          'router',
+          'route-recognizer',
+          'templating',
+          'templating-binding',
+          'templating-resources',
+          'templating-router',
+          'task-queue',
+        ].reduce(
+          /**
+           * @param {Record<string, string>} map
+           */
+          (map, packageName) => {
+            const aureliaName = `aurelia-${packageName}`;
+            map[aureliaName] = path.resolve(__dirname, `../../node_modules/${aureliaName}`);
+            return map;
+          },
+          {}
+        )),
+        // alias all packages to src code
+        // ...([
+        //   'aurelia-ej-2-bridge-demo-plugin',
+        // ].reduce((map, packageName) => {
+        //   const mappedPackagedName = `@aurelia-ej2-bridge/${packageName}`;
+        //   map[mappedPackagedName] = path.resolve(__dirname, `../${packageName}/src`);
+        //   return map;
+        // }, {})), 
+        '@aurelia-ej2-bridge/aurelia-ej-2-bridge-demo-plugin': path.resolve(__dirname, `../aurelia-ej2-bridge-demo-plugin/src`) 
+    }
   },
   entry: {
     app: ['aurelia-bootstrapper']

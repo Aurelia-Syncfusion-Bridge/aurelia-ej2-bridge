@@ -1,5 +1,5 @@
 {
-  "compileOnSave": false,
+  "extends": "../../tsconfig-build.json",
   "compilerOptions": {
     "module": "amd",
     "noImplicitAny": false,
@@ -31,8 +31,5 @@
     "./dev-app/**/*.ts",
     "./test/**/*.ts",
     "./types/**/*.d.ts"
-  ],
-  "atom": {
-    "rewriteTsconfig": false
-  }
+  ]
 }

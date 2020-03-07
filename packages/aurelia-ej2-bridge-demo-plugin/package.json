@@ -1,59 +1,58 @@
 {
-  "name": "aurelia-ej-2-bridge-demo-plugin",
+  "name": "@aurelia-ej2-bridge/aurelia-ej-2-bridge-demo-plugin",
   "description": "An Aurelia plugin project.",
-  "version": "0.1.0",
+  "version": "0.1.1-alpha.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": ""
   },
   "license": "MIT",
   "devDependencies": {
-    "aurelia-bootstrapper": "^2.3.2",
+    "@types/jest": "^24.0.9",
+    "@types/node": "^13.7.7",
     "aurelia-animator-css": "^1.0.4",
+    "aurelia-bootstrapper": "^2.3.3",
     "aurelia-cli": "^1.2.3",
+    "aurelia-loader-nodejs": "^1.1.0",
+    "aurelia-pal-nodejs": "^2.0.0",
     "aurelia-testing": "^1.0.0",
     "aurelia-tools": "^2.0.0",
-    "gulp": "^4.0.0",
-    "minimatch": "^3.0.4",
-    "through2": "^3.0.0",
-    "vinyl-fs": "^3.0.3",
-    "promise-polyfill": "^8.1.0",
-    "del": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "requirejs": "^2.3.6",
-    "text": "requirejs/text#latest",
-    "gulp-typescript": "^5.0.0",
-    "gulp-tslint": "^8.1.4",
-    "tslint": "^5.13.0",
-    "typescript": "^3.1.2",
-    "@types/node": "^10.11.6",
-    "gulp-postcss": "^8.0.0",
-    "autoprefixer": "^9.4.8",
-    "cssnano": "^4.1.10",
-    "postcss-url": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-htmlmin": "^5.0.1",
-    "browser-sync": "^2.26.3",
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
     "connect-history-api-fallback": "^1.6.0",
+    "cssnano": "^4.1.10",
     "debounce": "^1.2.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^1.4.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tslint": "^8.1.4",
+    "gulp-typescript": "^5.0.0",
     "gulp-watch": "^5.0.1",
     "jest": "^24.1.0",
     "jest-cli": "^24.1.0",
     "jest-transform-stub": "^2.0.0",
-    "aurelia-loader-nodejs": "^1.0.1",
-    "aurelia-pal-nodejs": "^1.2.0",
+    "minimatch": "^3.0.4",
+    "postcss-url": "^8.0.0",
+    "promise-polyfill": "^8.1.3",
+    "requirejs": "^2.3.6",
+    "text": "requirejs/text#latest",
+    "through2": "^3.0.1",
     "ts-jest": "^24.0.0",
-    "@types/jest": "^24.0.9"
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3",
+    "vinyl-fs": "^3.0.3"
   },
   "browserslist": [
     "defaults"
   ],
   "scripts": {
     "build": "au build-plugin",
-    "start": "au run",
     "watch": "au build-plugin --watch",
     "prepare": "npm run build",
     "pretest": "au lint",
@@ -65,7 +64,7 @@
   },
   "main": "dist/commonjs/index.js",
   "module": "dist/native-modules/index.js",
-  "private": true,
+  "private": false,
   "files": [
     "dist",
     "src"
@@ -107,5 +106,11 @@
       "text",
       "html"
     ]
-  }
+  },
+  "dependencies": {
+    "aurelia-animator-css": "^1.0.4",
+    "aurelia-binding": "^2.5.2",
+    "aurelia-bootstrapper": "^2.3.3"
+  },
+  "gitHead": "81b0cd2ab1814e1eff67848188587c0e9c94a415"
 }

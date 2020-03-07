@@ -1,5 +1,5 @@
 {
-  "compileOnSave": false,
+  "extends": "../../tsconfig-build.json",
   "compilerOptions": {
     "module": "esnext",
     "skipLibCheck": true,

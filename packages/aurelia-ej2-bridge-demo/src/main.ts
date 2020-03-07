@@ -1,11 +1,15 @@
-import {Aurelia} from 'aurelia-framework'
+import { Aurelia, FrameworkConfiguration, PLATFORM } from 'aurelia-framework'
 import * as environment from '../config/environment.json';
-import {PLATFORM} from 'aurelia-pal';
+
+//import * as hw from '@aurelia-ej2-bridge/aurelia-ej-2-bridge-demo-plugin'
 
 export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
-    .feature(PLATFORM.moduleName('resources/index'));
+    .feature(PLATFORM.moduleName('resources/index'))
+    .plugin('@aurelia-ej-2-bridge/aurelia-ej-2-bridge-demo-plugin');
+
+    //hw.configure(aurelia.container.get(FrameworkConfiguration));
 
   aurelia.use.developmentLogging(environment.debug ? 'debug' : 'warn');
 

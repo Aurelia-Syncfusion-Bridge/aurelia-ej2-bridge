@@ -9,19 +9,19 @@
     "ux",
     "button"
   ],
-  "homepage": "http://...",
+  "homepage": "https://github.com/Aurelia-Syncfusion-Bridge/aurelia-ej2-bridge",
   "bugs": {
-    "url": "https://github.com/..."
+    "url": "https://github.com/Aurelia-Syncfusion-Bridge/aurelia-ej2-bridge/issues"
   },
   "license": "MIT",
-  "author": "David Kossoglyad <david@logoui.co.il> (http://...)",
+  "author": "David Kossoglyad <david@logoui.co.il> (https://github.com/Aurelia-Syncfusion-Bridge/aurelia-ej2-bridge)",
   "contributors": [
   ],
   "main": "dist/commonjs/index.js",
   "typings": "dist/types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/..."
+    "url": "https://github.com/Aurelia-Syncfusion-Bridge/aurelia-ej2-bridge"
   },
   "scripts": {
     "lint": "cross-env tslint --project tsconfig.json",

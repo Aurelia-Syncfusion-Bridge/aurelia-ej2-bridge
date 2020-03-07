@@ -15,8 +15,7 @@
   },
   "license": "MIT",
   "author": "David Kossoglyad <david@logoui.co.il> (https://github.com/Aurelia-Syncfusion-Bridge/aurelia-ej2-bridge)",
-  "contributors": [
-  ],
+  "contributors": [],
   "main": "dist/commonjs/index.js",
   "typings": "dist/types/index.d.ts",
   "repository": {
@@ -47,8 +46,8 @@
     "prepare-release": "cross-env npm run changelog && npm run build && npm run doc"
   },
   "dependencies": {
-    "aurelia-binding": "^2.5.2",
-    "@syncfusion/ej2-base": "latest"
+    "@syncfusion/ej2-base": "latest",
+    "aurelia-binding": "^2.5.2"
   },
   "devDependencies": {
     "@types/jasmine": "^2.8.6",
@@ -94,8 +93,7 @@
   },
   "aurelia": {
     "build": {
-      "resources": [
-      ]
+      "resources": []
     },
     "documentation": {
       "articles": []

@@ -31,8 +31,7 @@
     "changelog": "cross-env conventional-changelog -p angular -i doc/CHANGELOG.md -s",
     "bump-version": "npm --no-git-tag-version version",
     "preprepare-release": "cross-env npm run test",
-    "prepare-release": "cross-env npm run changelog && npm run build && npm run doc",
-    "release": "lerna publish --conventional-commits --dist-tag=next"
+    "prepare-release": "cross-env npm run changelog && npm run build && npm run doc"
   },
   "dependencies": {
     "aurelia-binding": "^2.5.2",

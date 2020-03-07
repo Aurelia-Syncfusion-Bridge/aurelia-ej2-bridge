@@ -34,7 +34,7 @@ export abstract class EjComponentModel<T extends Component<HTMLElement>> impleme
      */
     @bindable({ defaultBindingMode: bindingMode.twoWay })
     public locale?: string;
-    localeChanged(newValue) {
+    localeChanged(newValue: string) {
       if (this._wrapped) {
         this._wrapped.locale = newValue;
       }

@@ -61,8 +61,7 @@ module.exports = function({ production = '' } = {}) {
         )),
         // alias all packages to src code
         ...([
-          'base',
-          'button',          
+          'base',          
         ].reduce((map, packageName) => {
           const mappedPackagedName = `@aurelia-ej2-bridge/${packageName}`;
           map[mappedPackagedName] = path.resolve(__dirname, `../packages/${packageName}/src`);

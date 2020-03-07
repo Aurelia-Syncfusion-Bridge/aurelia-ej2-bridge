@@ -1,7 +1,0 @@
-.rollupcache
-test
-.npmignore
-karma.conf.ts
-rollup.config.js
-tsconfig-test.json
-tsconfig.json

@@ -1,7 +1,7 @@
 {
   "name": "@aurelia-ej2-bridge/button",
   "version": "0.0.1",
-  "description": "Base component for Aurelia Ej2 bridge",
+  "description": "Buttons components for Aurelia Ej2 bridge",
   "keywords": [
     "aurelia",
     "styles",
@@ -9,9 +9,9 @@
     "ux",
     "button"
   ],
-  "homepage": "http://aurelia.io",
+  "homepage": "http://...",
   "bugs": {
-    "url": "https://github.com/aurelia/ux/issues"
+    "url": "https://github.com/"
   },
   "license": "MIT",
   "author": "David Kossoglyad <david@logoui.co.il> (http://...)",
@@ -21,7 +21,7 @@
   "typings": "dist/types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aurelia/ux"
+    "url": "https://github.com/..."
   },
   "scripts": {
     "lint": "cross-env tslint --project tsconfig.json",

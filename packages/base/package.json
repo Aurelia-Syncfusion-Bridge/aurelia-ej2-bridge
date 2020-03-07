@@ -9,9 +9,9 @@
     "ux",
     "button"
   ],
-  "homepage": "http://aurelia.io",
+  "homepage": "http://...",
   "bugs": {
-    "url": "https://github.com/aurelia/ux/issues"
+    "url": "https://github.com/..."
   },
   "license": "MIT",
   "author": "David Kossoglyad <david@logoui.co.il> (http://...)",
@@ -21,7 +21,7 @@
   "typings": "dist/types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aurelia/ux"
+    "url": "https://github.com/..."
   },
   "scripts": {
     "lint": "cross-env tslint --project tsconfig.json",

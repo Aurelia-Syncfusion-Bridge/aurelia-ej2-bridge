@@ -1,6 +1,6 @@
 # aurelia-ej2-bridge
 
-[![npm Version](https://img.shields.io/npm/v/0.0.1)](https://www.npmjs.com/package/@aurelia-ej2-bridge/base)
+![npm (scoped)](https://img.shields.io/npm/v/@aurelia-ej2-bridge/base)
 
 ## Documentation
 

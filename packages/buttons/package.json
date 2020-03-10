@@ -1,6 +1,6 @@
 {
   "name": "@aurelia-ej2-bridge/buttons",
-  "version": "0.0.2-alpha.5",
+  "version": "0.0.2-alpha.6",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -46,11 +46,11 @@
     "prepare-release": "cross-env npm run test && npm run changelog && npm run build"
   },
   "dependencies": {
-    "aurelia-binding": "^2.5.2",
-    "@aurelia-ej2-bridge/base": "^0.0.2-alpha.5",
+    "@aurelia-ej2-bridge/base": "^0.0.2-alpha.6",
     "@syncfusion/ej2-base": "~17.4.51",
     "@syncfusion/ej2-buttons": "~17.4.51",
-    "@syncfusion/ej2-icons": "~17.4.51"
+    "@syncfusion/ej2-icons": "~17.4.51",
+    "aurelia-binding": "^2.5.2"
   },
   "devDependencies": {
     "@types/jasmine": "^2.8.6",

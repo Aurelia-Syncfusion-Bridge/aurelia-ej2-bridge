@@ -21,8 +21,6 @@
     "moment": "^2.24.0"
   },
   "devDependencies": {
-    "@syncfusion/ej2-base": "^17.4.51",
-    "@syncfusion/ej2-buttons": "^17.4.51",
     "aurelia-loader-webpack": "^2.2.1",
     "aurelia-webpack-plugin": "^4.0.0",
     "css-loader": "^3.4.2",

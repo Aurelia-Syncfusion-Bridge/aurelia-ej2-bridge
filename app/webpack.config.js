@@ -107,7 +107,7 @@ module.exports = function({ production = '' } = {}) {
       // note that following config is for webpack aliasing to source code
       // it won't be necessary for real app
       new AureliaWebpackPlugin.ModuleDependenciesPlugin({
-        '@aurelia-ej2-bridge/button': [
+        '@aurelia-ej2-bridge/buttons': [
           './index.ts'
         ]
       }),

@@ -1,11 +1,11 @@
 {
-  "name": "@aurelia-ej2-bridge/base",
+  "name": "@aurelia-ej2-bridge/button",
   "version": "0.0.2-alpha.5",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
-  "description": "Base component for Aurelia Ej2 bridge",
+  "description": "Buttons components for Aurelia Ej2 bridge",
   "keywords": [
     "aurelia",
     "styles",
@@ -46,9 +46,11 @@
     "prepare-release": "cross-env npm run test && npm run changelog && npm run build"
   },
   "dependencies": {
-    "@syncfusion/ej2-base": "^17.4.51",
-    "@syncfusion/ej2-icons": "~17.4.51",
-    "aurelia-binding": "^2.5.2"
+    "aurelia-binding": "^2.5.2",
+    "@aurelia-ej2-bridge/base": "^0.0.2-alpha.5",
+    "@syncfusion/ej2-base": "~17.4.51",
+    "@syncfusion/ej2-buttons": "~17.4.51",
+    "@syncfusion/ej2-icons": "~17.4.51"
   },
   "devDependencies": {
     "@types/jasmine": "^2.8.6",

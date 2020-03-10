@@ -9,6 +9,7 @@
       "copyfiles",
       "datepicker",
       "devtool",
+      "esnext",
       "lcovonly",
       "postversion",
       "prebuild",

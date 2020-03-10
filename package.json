@@ -25,13 +25,9 @@
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap --hoist",
     "build": "lerna run build  --ignore @aurelia-ej2-bridge/__e2e__",
-    "predoc": "cross-env rimraf doc/api.json && rimraf dist/doc-temp && tsc --project tsconfig.json --outFile dist/doc-temp/aurelia-ej2-bridge.js && node doc/shape-defs && copyfiles tsconfig.json dist/doc-temp",
-    "doc": "cross-env typedoc --json doc/api.json --excludeExternals --includeDeclarations --mode modules --target ES6 --name aurelia-ej2-bridge-docs dist/doc-temp/",
-    "postdoc": "cross-env node doc/shape-doc && rimraf dist/doc-temp",
     "changelog": "cross-env conventional-changelog -p angular -i doc/CHANGELOG.md -s",
     "bump-version": "npm --no-git-tag-version version",
-    "preprepare-release": "cross-env npm run test",
-    "prepare-release": "cross-env npm run changelog && npm run build && npm run doc"
+    "prepare-release": "cross-env npm run test && npm run changelog && npm run build"
   },
   "dependencies": {
     "aurelia-binding": "^2.5.2",
@@ -61,6 +57,7 @@
     "conventional-changelog-cli": "^2.0.31",
     "copyfiles": "^1.2.0",
     "cross-env": "^3.2.4",
+    "eslint": "^6.8.0",
     "html-entities": "^1.2.1",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine-core": "^2.99.1",
@@ -84,6 +81,7 @@
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
     "tslint": "^6.0.0",
+    "tslint-microsoft-contrib": "^6.2.0",
     "typedoc": "^0.16.11",
     "typescript": "^3.8.3",
     "webpack": "^4.42.0",

@@ -7,22 +7,24 @@
       "es2017",
       "dom"
     ],
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "strictNullChecks": true,
+    "allowJs": false,
     "declaration": true,
-    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": false,
     "noEmitHelpers": false,
-    "skipLibCheck": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitUseStrict": false,
+    "suppressImplicitAnyIndexErrors": true
   },
   "exclude": [
     ".vscode",
     "dist",
     "doc",
-    "node_modules"
+    "node_modules",
+    "app"
   ]
 }

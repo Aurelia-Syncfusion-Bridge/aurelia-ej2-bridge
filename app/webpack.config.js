@@ -61,7 +61,8 @@ module.exports = function({ production = '' } = {}) {
         )),
         // alias all packages to src code
         ...([
-          'base',          
+          'base',
+          'buttons'          
         ].reduce((map, packageName) => {
           const mappedPackagedName = `@aurelia-ej2-bridge/${packageName}`;
           map[mappedPackagedName] = path.resolve(__dirname, `../packages/${packageName}/src`);
@@ -105,19 +106,11 @@ module.exports = function({ production = '' } = {}) {
       }),
       // note that following config is for webpack aliasing to source code
       // it won't be necessary for real app
-      // new AureliaWebpackPlugin.ModuleDependenciesPlugin({
-      //   '@aurelia-ej2-bridge/button': [
-      //     './ux-button.html'
-      //   ],
-      //   '@aurelia-ej2-bridge/card': [
-      //     './ux-card-action-row.html',
-      //     './ux-card-content.html',
-      //     './ux-card-footer.html',
-      //     './ux-card-header.html',
-      //     './ux-card-separator.html',
-      //     './ux-card.html'
-      //   ],
-      // }),
+      new AureliaWebpackPlugin.ModuleDependenciesPlugin({
+        '@aurelia-ej2-bridge/button': [
+          './index.ts'
+        ]
+      }),
       new HtmlWebpackPlugin({
 
         template: './index.ejs'

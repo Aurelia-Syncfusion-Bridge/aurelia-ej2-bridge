@@ -3,7 +3,7 @@ import { ChipModel, Chip } from '@syncfusion/ej2-buttons';
 import { EjComponentModel } from '@aurelia-ej2-bridge/base';
 import { Component } from '@syncfusion/ej2-base';
 
-export class EjChipModel extends EjComponentModel<Component<HTMLElement>> implements ChipModel {
+export class EjChipModel /*extends EjComponentModel<Component<HTMLElement>> implements ChipModel */{
 
   /**
    * This text property helps to render ChipList component.

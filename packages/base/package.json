@@ -46,8 +46,6 @@
     "prepare-release": "cross-env npm run test && npm run changelog && npm run build"
   },
   "dependencies": {
-    "@syncfusion/ej2-base": "^17.4.51",
-    "@syncfusion/ej2-icons": "~17.4.51",
     "aurelia-binding": "^2.5.2"
   },
   "devDependencies": {
@@ -101,5 +99,9 @@
     "documentation": {
       "articles": []
     }
+  },
+  "peerDependencies": {
+    "@syncfusion/ej2-base": "^17.4.51",
+    "@syncfusion/ej2-icons": "^17.4.51"
   }
 }

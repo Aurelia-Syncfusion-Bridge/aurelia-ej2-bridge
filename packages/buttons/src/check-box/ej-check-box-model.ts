@@ -1,6 +1,6 @@
 import { bindable, bindingMode } from 'aurelia-framework';
 import { EmitType } from '@syncfusion/ej2-base';
-import {LabelPosition, ChangeEventArgs, CheckBoxModel, CheckBox} from '@syncfusion/ej2-buttons';
+import { LabelPosition, ChangeEventArgs, CheckBoxModel, CheckBox } from '@syncfusion/ej2-buttons';
 import { EjComponentModel } from '@aurelia-ej2-bridge/base';
 
 /**

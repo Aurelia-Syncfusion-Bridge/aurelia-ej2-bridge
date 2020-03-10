@@ -10,6 +10,7 @@
       "datepicker",
       "devtool",
       "esnext",
+      "fsevents",
       "lcovonly",
       "postversion",
       "prebuild",

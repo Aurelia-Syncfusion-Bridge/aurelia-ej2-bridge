@@ -1,6 +1,6 @@
 {
   "name": "@aurelia-ej2-bridge/buttons",
-  "version": "0.0.2-alpha.6",
+  "version": "0.0.2",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -46,7 +46,7 @@
     "prepare-release": "cross-env npm run test && npm run changelog && npm run build"
   },
   "dependencies": {
-    "@aurelia-ej2-bridge/base": "^0.0.2-alpha.6",
+    "@aurelia-ej2-bridge/base": "^0.0.2",
     "@syncfusion/ej2-buttons": "^17.4.51",
     "aurelia-binding": "^2.5.2"
   },

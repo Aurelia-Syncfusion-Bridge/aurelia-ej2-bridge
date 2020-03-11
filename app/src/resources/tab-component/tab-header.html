@@ -1,0 +1,9 @@
+<template>
+	<button
+    class="btn btn-link"
+    class.bind="isActive?'active':''"
+    click.delegate="tabSelector()"
+  >
+    ${name}
+  </button>
+</template>

@@ -3,7 +3,32 @@
 
   <h1>Hello ${message}!</h1>
   
-  <ej-button content="HUY"></ej-button>
+  <ej-button content="button" primary="true"></ej-button>
   <!-- <router-view></router-view> -->
+
+  <tabs>
+    <tab header="Preview">
+      <div style="display: block; height: 400px; overflow: scroll;">
+        <dynamic-html html.bind="html" context.bind="context" render-errors="true">
+        </dynamic-html>
+      </div>
+    </tab>
+    <tab header="Sources">
+      <div >
+        <tabs>
+          <tab header="index.html">
+            <div style="background-color: #1e1e1e; height: 400px; overflow: hidden;">
+              <monaco-editor options.bind="{language: 'html'}" code.bind="html"></monaco-editor>              
+            </div>
+          </tab>
+          <tab header="index.js">
+            <div style="background-color: #1e1e1e; height: 400px; overflow: hidden;">
+              <monaco-editor options.bind="{language: 'javascript'}" code.bind="jsRaw"></monaco-editor>              
+            </div>
+          </tab>
+        </tabs>
+      </div>      
+    </tab>    
+  </tabs>
 
 </template>

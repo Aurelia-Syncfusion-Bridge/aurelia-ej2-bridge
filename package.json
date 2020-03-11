@@ -27,7 +27,8 @@
     "build": "lerna run build  --ignore @aurelia-ej2-bridge/__e2e__",
     "changelog": "cross-env conventional-changelog -p angular -i doc/CHANGELOG.md -s",
     "bump-version": "npm --no-git-tag-version version",
-    "prepare-release": "cross-env npm run test && npm run changelog && npm run build"
+    "prerelease": "cross-env npm run test && npm run changelog && npm run build",
+    "release": "lerna publish --conventional-commits --dist-tag=next"
   },
   "dependencies": {
     "aurelia-binding": "^2.5.2",

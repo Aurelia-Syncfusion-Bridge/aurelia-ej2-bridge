@@ -9,7 +9,8 @@ async function configure(aurelia: Aurelia): Promise<void> {
     .use
     .developmentLogging()
     .standardConfiguration()
-    //.plugin(PLATFORM.moduleName('@aurelia-ej2-bridge/base'))
+    .feature(PLATFORM.moduleName('resources/index'))
+    .plugin(PLATFORM.moduleName('aurelia-dynamic-html'))
     .plugin(PLATFORM.moduleName('@aurelia-ej2-bridge/buttons'))
     .plugin(PLATFORM.moduleName('aurelia-validation'));
 

@@ -1,0 +1,25 @@
+<template>
+  <require from="./tab-header"></require>
+  <style>
+    .header {
+      display: flex;
+      border-bottom: 0.05em solid rgb(204, 204, 204);
+    }
+    
+    .header button {
+      margin-bottom: 0 !important;
+    }
+    
+    .header button[class*="active"] {
+      color: black;
+      text-decoration: none;
+      border: 0;
+      border-bottom: 0.1em solid black;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      cursor: inherit !important;
+    }
+  </style>
+  <div class="header"><template replaceable part="header"></template></div>
+  <div><template replaceable part="content"></template></div>
+</template>

@@ -10,14 +10,14 @@ export class EjButton extends EjButtonModel implements ButtonModel {
   @bindable public primary: boolean | string = false;
   primaryChanged(value: any) {
     if (this._wrapped) {
-      (<Button>this._wrapped).isPrimary = this.primary === true || this.primary === 'true';
+      this._wrapped.isPrimary = this.primary === true || this.primary === 'true';
     }
   }
 
   @bindable public toggle: boolean | string = false;
   toggleChanged(value: any) {
     if (this._wrapped) {
-      (<Button>this._wrapped).isToggle = this.toggle === true || this.toggle  === 'true';
+      this._wrapped.isToggle = this.toggle === true || this.toggle  === 'true';
     }
   }
   @bindable public enabled: boolean | string = true;

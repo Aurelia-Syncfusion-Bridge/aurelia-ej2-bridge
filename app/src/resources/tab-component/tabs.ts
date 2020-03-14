@@ -13,6 +13,7 @@ function processTabs(compiler, resources, node: HTMLElement, instruction) {
   const contentTemplate = document.createElement("template");
   contentTemplate.setAttribute("replace-part", "content");
 
+  console.log(instruction.type["viewFactory"]);
   resources.registerElement(
     "tab-header",
     instruction.type["viewFactory"].resources.getElement("tab-header")

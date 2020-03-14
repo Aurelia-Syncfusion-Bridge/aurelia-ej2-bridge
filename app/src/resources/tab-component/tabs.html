@@ -20,6 +20,14 @@
       cursor: inherit !important;
     }
   </style>
-  <div class="header"><template replaceable part="header"></template></div>
+  <div class="header e-tab-header e-control e-toolbar e-lib e-keyboard" role="toolbar" aria-disabled="false" aria-haspopup="false" aria-orientation="horizontal" tabindex="0" aria-label="tab-header" style="height: auto; width: 100%; overflow: hidden;">
+    <div class="e-toolbar-items e-lib e-hscroll e-control e-touch" style="display: block;">    
+      <div class="e-hscroll-bar" tabindex="-1" style="overflow-x: hidden;">
+        <div class="e-hscroll-content">
+          <template replaceable part="header"></template>
+        </div>                
+      </div>
+    </div>
+  </div>
   <div><template replaceable part="content"></template></div>
 </template>

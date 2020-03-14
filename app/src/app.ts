@@ -19,7 +19,13 @@ export class App {
     this.html = initialHTML;
   }
 
-  
+  public jsRawChanged(newValue: string, oldValue: string): void {
+    const functionBody = `return ${newValue}`;
+    // tslint:disable-next-line:no-function-constructor-with-string-args
+    const ctorFactory = new Function(functionBody);
+    const ctor = ctorFactory();
+    this.context = new ctor();
+  }
 
   // public configureRouter(config: RouterConfiguration, router: Router) {
   //   this.router = router;
@@ -42,5 +48,5 @@ const initialJs = `class Foo {
 
 const initialHTML = `
   <h1>Hello Viewer!</h1>
-  <ej-button primary="true" content="message"></ej-button>
+  <ej-button primary="true" click.delegate="submit()" content="message"></ej-button>
 `;

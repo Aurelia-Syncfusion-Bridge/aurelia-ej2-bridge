@@ -2,11 +2,17 @@
     "typescript.tsdk": "node_modules/typescript/lib",
     "html.suggest.angular1": false,
     "html.suggest.ionic": false,
+    "css.remoteStyleSheets": [
+      "https://cdn.syncfusion.com/ej2/material.css",
+      "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    ],
     "cSpell.words": [
       "Gitter",
+      "Hljs",
       "Syncfusion",
       "chunkhash",
       "copyfiles",
+      "darcula",
       "datepicker",
       "devtool",
       "esnext",
@@ -22,5 +28,9 @@
       "symlink",
       "tsnode",
       "typedoc"
-    ]
+    ],
+    "html.customData": [
+      "./html.html-data.json"
+    ],
+    "restructuredtext.confPath": ""
   }

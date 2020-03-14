@@ -10,9 +10,13 @@ async function configure(aurelia: Aurelia): Promise<void> {
     .developmentLogging()
     .standardConfiguration()
     .feature(PLATFORM.moduleName('resources/index'))
+    .feature(PLATFORM.moduleName('resources/highlight/index'))
+    .feature(PLATFORM.moduleName('resources/tab-component/index'))
+    //.feature(PLATFORM.moduleName('resources/code-view/index'))
     .plugin(PLATFORM.moduleName('aurelia-dynamic-html'))
     .plugin(PLATFORM.moduleName('@aurelia-ej2-bridge/buttons'))
-    .plugin(PLATFORM.moduleName('aurelia-validation'));
+    .plugin(PLATFORM.moduleName('aurelia-validation'))
+    ;
 
   await aurelia.start();
   await aurelia.setRoot(PLATFORM.moduleName('app'), document.body);

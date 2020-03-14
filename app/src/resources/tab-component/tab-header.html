@@ -1,9 +1,22 @@
 <template>
-	<button
-    class="btn btn-link"
-    class.bind="isActive?'active':''"
+  <style>
+    .e-active {
+      color: #e3165b;
+    }
+    .e-active.e-indicator {
+      background-color: #e3165b;
+      border-bottom: #e3165b;
+      border-bottom-width: 2px;
+    }
+  </style>
+	<div role="tab"
+    class="e-toolbar-item e-template"
+    class.bind="isActive?'e-active active':''"
     click.delegate="tabSelector()"
   >
-    ${name}
-  </button>
+    <div class="e-tab-wrap">      
+      <div class="e-tab-text" role="presentation">${name}</div>
+      <div class="e-active e-indicator"></div>
+    </div>    
+</div>
 </template>

@@ -9,6 +9,12 @@ import {
 } from 'aurelia-framework';
 import { CheckBox, CheckBoxModel } from '@syncfusion/ej2-buttons';
 
+/**
+ * * The CheckBox is a graphical user interface element that allows you to select one or more options from the choices.
+ *   It contains checked, unchecked, and indeterminate states.
+ *    ```html
+ *   <ej-checkbox></ej-checkbox>
+ */
 @autoinject
 @customElement('ej-checkbox')
 @inlineView('<template><input type="checkbox"  name.bind="name" checked.bind="checked" value.bind="value" disabled.bind="disabled"/></template>')

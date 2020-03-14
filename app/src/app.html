@@ -1,11 +1,27 @@
 <template>
-  <require from="./app.css"></require>
+  <require from="./app.scss"></require>
 
   <h1>Hello ${message}!</h1>
-  
-  <ej-button content="button" primary="true"></ej-button>
+  <hr>
+  <hr>
+  <ej-checkbox></ej-checkbox>
+  <hr>
+  <ej-button class="lay" content="button" primary="true"></ej-button>
   <!-- <router-view></router-view> -->
+  <hl language="typescript">
+  
+    public class MyClass {
+    }
+    </hl>
 
+    <hl language="handlebars">
+      &lt;div class=&quot;entry&quot;&gt;
+        {{!-- only show if author exists --}}
+        {{#if author}}
+          &lt;h1&gt;{{firstName}} {{lastName}}&lt;/h1&gt;
+        {{/if}}
+      &lt;/div&gt;
+    </hl>
   <tabs>
     <tab header="Preview">
       <div style="display: block; height: 400px; overflow: scroll;">

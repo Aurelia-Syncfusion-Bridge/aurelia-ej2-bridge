@@ -1,8 +1,9 @@
-import { observable } from 'aurelia-framework';
-import { inject } from 'aurelia-dependency-injection';
-import { RouterConfiguration, Router } from 'aurelia-router';
-import { routes } from './routes';
+import { observable, autoinject } from 'aurelia-framework';
+import { Router, RouterConfiguration, RouteConfig } from 'aurelia-router';
+import { Sidebar, TreeView, NodeSelectEventArgs } from '@syncfusion/ej2-navigations';
+import { routes, flatten } from './routes';
 
+@autoinject
 export class App {
   public router: Router;
 
@@ -27,13 +28,47 @@ export class App {
     this.context = new ctor();
   }
 
-  // public configureRouter(config: RouterConfiguration, router: Router) {
-  //   this.router = router;
+  configureRouter(config: RouterConfiguration, router: Router): void {
 
-  //   config.options.root = '/';
+    this.router = router;
+    config.title = 'Aurelia Syncfusion Bridge';
 
-  //   config.map(routes);
-  // }
+    config.map([ { route: '', redirect: routes[0].route.toString() },
+                  ...<RouteConfig[]>flatten(routes, [])] );
+
+    //config.mapUnknownRoutes('getting-started');
+  }
+
+  attached() {
+    let sidebarMenu: Sidebar = new Sidebar({
+      width: '260px',
+      target: '.main-content',
+      mediaQuery: '(min-width: 600px)',
+    });
+    sidebarMenu.appendTo('#sidebar-treeview');
+
+    // Toggle the Sidebar
+    document.getElementById('hamburger').onclick = (): void => {
+        sidebarMenu.toggle();
+    };
+
+    // TreeView  initialization
+
+    let mainTreeView: TreeView = new TreeView({
+        fields: { dataSource: routes, id: 'route', text: 'title', child: 'children' },
+        expandOn: 'Click',
+        nodeSelected: (eargs: NodeSelectEventArgs) => {
+
+          if (this.router.routes.find(route => route.route === eargs.nodeData.id).nav) {
+            this.router.navigate(eargs.nodeData.id.toString());
+          }
+
+        }
+    });
+
+    mainTreeView.appendTo('#main-treeview');
+  }
+
 }
 
 const initialJs = `class Foo {

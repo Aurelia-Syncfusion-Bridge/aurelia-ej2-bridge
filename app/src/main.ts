@@ -3,7 +3,7 @@ import { initialize } from 'aurelia-pal-browser';
 import { Aurelia, PLATFORM } from 'aurelia-framework';
 import { WebpackLoader } from 'aurelia-loader-webpack';
 
-async function configure(aurelia: Aurelia): Promise<void> {
+export function configure(aurelia: Aurelia) {
   //console.log(PLATFORM.moduleName('node_modules/@aurelia-ej2-bridge/buttons/dist/es2015'));
   aurelia
     .use
@@ -18,12 +18,15 @@ async function configure(aurelia: Aurelia): Promise<void> {
     .plugin(PLATFORM.moduleName('aurelia-validation'))
     ;
 
-  await aurelia.start();
-  await aurelia.setRoot(PLATFORM.moduleName('app'), document.body);
+  // await aurelia.start();
+  // await aurelia.setRoot(PLATFORM.moduleName('app'), document.body);
+  aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app')));
 }
 
-(async () => {
-  initialize();
-  const aurelia = new Aurelia(new WebpackLoader());
-  await configure(aurelia);
-})();
+
+
+// (async () => {
+//   initialize();
+//   const aurelia = new Aurelia(new WebpackLoader());
+//   await configure(aurelia);
+// })();

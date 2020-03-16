@@ -1,4 +1,4 @@
-import { enableRipple } from '@syncfusion/ej2-base';
+import { enableRipple, isRippleEnabled } from '@syncfusion/ej2-base';
 import { EjSwitchModel } from './ej-switch-model';
 import { SwitchModel, Switch, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { customElement, bindable, autoinject, inlineView } from 'aurelia-framework';
@@ -17,6 +17,11 @@ export class EjSwitch extends EjSwitchModel implements SwitchModel {
   }
 
   attached() {
+
+    if (!isRippleEnabled) {
+      enableRipple(true);
+      console.log('========= RIPPLE ENABLED ===========');
+    }
 
     this.change = (e: ChangeEventArgs) => {
       this.checked = e.checked;

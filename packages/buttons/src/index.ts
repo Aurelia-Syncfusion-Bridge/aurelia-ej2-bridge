@@ -1,3 +1,4 @@
+import { enableRipple, isRippleEnabled } from '@syncfusion/ej2-base';
 
 import {FrameworkConfiguration} from 'aurelia-framework';
 import {PLATFORM} from 'aurelia-pal';
@@ -17,5 +18,10 @@ export function configure(config: FrameworkConfiguration) {
     PLATFORM.moduleName('./switch/ej-switch')    
   ]);
 
+  if (!isRippleEnabled) {
+    enableRipple(true);
+    console.log('========= RIPPLE ENABLED ===========');
+  }
+  
 }
 

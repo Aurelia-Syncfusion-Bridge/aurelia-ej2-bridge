@@ -7,10 +7,8 @@ import {
   bindingMode,
 } from 'aurelia-framework';
 import { RadioButton, RadioButtonModel, RadioLabelPosition } from '@syncfusion/ej2-buttons';
-import { enableRipple } from '@syncfusion/ej2-base';
+import { enableRipple, isRippleEnabled } from '@syncfusion/ej2-base';
 import { EjRadioButtonModel } from './ej-radio-button-model';
-
-enableRipple(true);
 
 @autoinject
 @customElement('ej-radio-button')
@@ -25,6 +23,11 @@ export class EjRadioButton extends EjRadioButtonModel implements RadioButtonMode
   }
 
   attached() {
+    if (!isRippleEnabled) {
+      enableRipple(true);
+      console.log('========= RIPPLE ENABLED ===========');
+    }
+
     this._wrapped = new RadioButton(
       {
         checked: this.checked,

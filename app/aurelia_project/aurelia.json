@@ -4,7 +4,7 @@
   "paths": {
     "root": "src",
     "resources": "resources",
-    "elements": "resources/elements",
+    "elements": "resources",
     "attributes": "resources/attributes",
     "valueConverters": "resources/value-converters",
     "bindingBehaviors": "resources/binding-behaviors"

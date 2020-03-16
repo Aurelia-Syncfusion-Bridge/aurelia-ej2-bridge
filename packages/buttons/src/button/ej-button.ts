@@ -1,7 +1,7 @@
 import { EjButtonModel } from './ej-button-model';
 import { bindable, autoinject, inlineView } from 'aurelia-framework';
 import { Button, ButtonModel } from '@syncfusion/ej2-buttons';
-import { enableRipple } from '@syncfusion/ej2-base';
+import { enableRipple, isRippleEnabled } from '@syncfusion/ej2-base';
 
 @autoinject
 @inlineView('<template><button></button></template>')
@@ -33,7 +33,12 @@ export class EjButton extends EjButtonModel implements ButtonModel {
   }
 
   attached() {
-    enableRipple(true);
+
+    if (!isRippleEnabled) {
+      enableRipple(true);
+      console.log('========= RIPPLE ENABLED ===========');
+    }
+
     this._wrapped = new Button({
         content: this.content,
         cssClass: this.cssClass,

@@ -26,7 +26,9 @@
       "preprocessors",
       "quotemark",
       "sourcemap",
+      "splitbuttons",
       "symlink",
+      "textbox",
       "tsnode",
       "typedoc"
     ],

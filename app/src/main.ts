@@ -15,6 +15,7 @@ export function configure(aurelia: Aurelia) {
     //.feature(PLATFORM.moduleName('resources/code-view/index'))
     .plugin(PLATFORM.moduleName('aurelia-dynamic-html'))
     .plugin(PLATFORM.moduleName('@aurelia-ej2-bridge/buttons'))
+    .plugin(PLATFORM.moduleName('@aurelia-ej2-bridge/inputs'))
     .plugin(PLATFORM.moduleName('aurelia-validation'))
     ;
 

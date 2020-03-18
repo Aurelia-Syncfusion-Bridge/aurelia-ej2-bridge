@@ -2,10 +2,10 @@
 // @import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
 // @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
+// body {
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 300;
+// }
 
 .doc-logo {
   height: 100%;
@@ -45,7 +45,7 @@ body {
   height: 55px;
   min-height: 55px;
   max-height: 55px;
-  background: #1c86c8;
+  background: #f4f4f4;
   color: #fff;
 }
 
@@ -331,6 +331,14 @@ body {
 .icon-copy-to-clipboard:before {
   content: '\F800';
 }
+.e-view {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  //position: absolute;
+  right: 0;
+  top:0
+}
 
 #doc-right-toc {
   color: rgb(0, 0, 0);
@@ -412,5 +420,14 @@ body {
   text-decoration: none;
   border-left: 2px solid transparent;
   font-size: 14px;
+}
+
+div#doc-body-container {
+  position: absolute !important;
+  top:60px
+}
+
+.doc-right-pane-margin {
+  margin-left:265px
 }
 

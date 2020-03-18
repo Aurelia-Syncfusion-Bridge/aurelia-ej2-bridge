@@ -22,14 +22,13 @@ export function flatten (routes: RouteDescriptor[], output: RouteDescriptor[]) {
 
 export const routes: RouteDescriptor[] = [
   {
+    route: 'introduction', name: 'introduction', title: 'Introduction', moduleId: PLATFORM.moduleName('introduction'), iconCss: 'icon-microchip icon', nav: true
+  },{
     route: 'test', name: 'test', title: 'Test', moduleId: PLATFORM.moduleName('test'), iconCss: 'icon-microchip icon', nav: true
+  },   
+  {
+    route: 'getting-started', name: 'getting-started', title: 'Getting Started', moduleId: PLATFORM.moduleName('./getting-started'), iconCss: 'icon-microchip icon', nav: true
   },
-  // {
-  //   route: 'introduction', name: 'introduction', title: 'Introduction', moduleId: PLATFORM.moduleName('./introduction'), iconCss: 'icon-microchip icon', nav: true
-  // },
-  // {
-  //   route: 'getting-started', name: 'getting-started', title: 'Getting Started', moduleId: PLATFORM.moduleName('./getting-started'), iconCss: 'icon-microchip icon', nav: true
-  // },
   // {
   //   route: 'components', name: 'components', title: 'Components', moduleId: PLATFORM.moduleName('./components'), iconCss: 'icon-microchip icon', nav: false,
   //   children: [

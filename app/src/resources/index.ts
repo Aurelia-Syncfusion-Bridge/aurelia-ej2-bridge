@@ -10,6 +10,7 @@ export function configure(config: FrameworkConfiguration) {
     PLATFORM.moduleName('./tab-component/tabs'), 
     PLATFORM.moduleName('./tab-component/tab-header'),
     PLATFORM.moduleName('./monaco-editor/monaco-editor'),
+    PLATFORM.moduleName('./converters/json-stringify-value-converter'),
     //PLATFORM.moduleName('./code-view/code-view'),
     PLATFORM.moduleName('./highlight/hljs')]);
 

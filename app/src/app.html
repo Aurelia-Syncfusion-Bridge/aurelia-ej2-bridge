@@ -2,17 +2,17 @@
 
   <require from="./resources/styles/bootstrap.css"></require>
   <require from="./resources/styles/material.css"></require>
+  <!-- <require from="./resources/styles/component-templates.scss"></require> -->
   <require from="./app.scss"></require>
 
   <div id="wrapper">
     <!--header-section  declaration -->
     <div class="main-header" id="header-section" style="position: fixed; z-index: 999; width: 100%;">
       <ul class="header-list">
-        <li class="float-left header-style icon-menu" id="hamburger"></li>
+        <li class="float-left header-style icon-menu" id="hamburger" style="color: black;"></li>
         <li class="float-left header-style nav-pane" style="margin-left: 62px;">
-          <a class="doc-logo-link"
-            href="https://ej2.syncfusion.com/documentation/introduction">
-            <div class="doc-logo doc-icons icon-syncfusion" style="margin: 0px; color: white;"></div>
+          <a class="doc-logo-link" href="https://ej2.syncfusion.com/documentation/introduction">
+            <div class="doc-logo doc-icons icon-syncfusion" style="margin: 0px;"></div>
           </a>
         </li>
         <li class="float-left header-style nav-pane">
@@ -20,15 +20,16 @@
             <img src="../static//aurelia.png" width="150px" class="float-left" style="margin-top: -10px;">
           </a>
         </li>
-        <li class="header-style float-right support border-left"><b>Support</b></li>
+        <li class="header-style float-right support border-left" style="color: black;"><b>Support</b></li>
       </ul>
     </div>
     <!-- end of header-section -->
 
     <!-- sidebar element declaration -->
-    <aside id="sidebar-treeview"  style="position: fixed; margin-top: 64px; z-index: 998;">
-        <div class="main-menu">
-          <!-- <div class="e-view layout__LeftPane-sc-1t3oqgw-5 cQQcHR" id="doc-left-pane">
+    <aside id="sidebar-treeview" style="position: fixed; margin-top: 64px; z-index: 998;">
+      
+      <div class="main-menu">
+        <!-- <div class="e-view layout__LeftPane-sc-1t3oqgw-5 cQQcHR" id="doc-left-pane">
             <div id="left-pane-search" class="e-view">
               <span class="e-input-group e-control-wrapper e-ddl" aria-owns="auto-complete_options" aria-autocomplete="both" aria-labelledby="auto-complete_hidden" aria-haspopup="true" aria-expanded="false" aria-readonly="false" style="width: 100%;">
                 <select aria-hidden="true" tabindex="-1" class="e-ddl-hidden" name="auto-complete" id="auto-complete_hidden"></select>
@@ -49,30 +50,30 @@
               </div>
             </div>
           </div> -->
-          <div class="table-content">
-            <input type="text" placeholder="Search..." class="search-icon">
-            <p class="main-menu-header">TABLE OF CONTENTS</p>
-          </div>
-          <div>
-            <!-- <ul id="main-treeview"></ul> -->
-            <div id="main-treeview"></div>
-          </div>
+        <div class="table-content">
+          <input type="text" placeholder="Search..." class="search-icon">
+          <p class="main-menu-header">TABLE OF CONTENTS</p>
+        </div>
+        <div>
+          <!-- <ul id="main-treeview"></ul> -->
+          <div id="main-treeview"></div>
         </div>
       </div>
-    </aside>
-    <!-- end of sidebar element -->
+  </div>
+  </aside>
+  <!-- end of sidebar element -->
 
 
-    <!-- main-content declaration -->
-    <div class="main-content" id="main-text">
+  <!-- main-content declaration -->
+  <div class="main-content" id="main-text">
 
-      <div class="sidebar-content">
+    <div class="sidebar-content">
 
-        <router-view></router-view>
+      <router-view></router-view>
 
-      </div>
     </div>
-    <!-- end of main-content -->
+  </div>
+  <!-- end of main-content -->
   </div>
 
 </template>

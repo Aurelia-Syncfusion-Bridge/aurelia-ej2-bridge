@@ -1,0 +1,89 @@
+<template>
+  
+  <h1 class="sidebar-heading"> Getting Started with au-ej2-plugin</h1>
+    <p>Aurelia-Syncfusion-Bridge includes wrappers for Syncfusion-JavaScript widget’s, which act as the interface for both Aurelia frameworks and Syncfusion JavaScript widgets. This bridge is a structured, configurable collection of JavaScript classes which wrap Syncfusion JavaScript controls, presenting them in the form of Aurelia components.</p>
+
+    <p>
+      The Syncfusion Aurelia components are named with prefix ej to avoid conflicting with other library component and offers the following features.
+
+      <ul>
+        <li>Properties</li>
+        <li>Two-way binding</li>
+        <li>Event binding</li>
+        <li>Templates</li>
+      </ul>
+
+    </p>
+    <div class="line"></div>
+
+
+    <h1>Hello, this is the dev app for plugin au-ej2-plugin</h1>
+    <p>This dev app is bundled to scripts/ folder (ignored in .gitignore). If you commit the bundle files to github, this app can serve as a <a href="https://pages.github.com" target="_blank">github page</a>!</p>
+
+    <p>Please read the <a href="README.md">README</a> file in your project for more information.</p>
+
+    <hr>
+
+    <div>
+
+      <div>
+        <ej-drop-down-list index="1">
+          <option value="0">John</option>
+          <option value="1">Albert</option>
+          <option value="2">Cat</option>
+        </ej-drop-down-list>
+      </div>
+    </div>
+
+    <div style="width: 300px;">
+      <hr>
+        <h2>Custom element "ej-autocomplete"</h2>
+        <div>
+          <ej-autocomplete  data-source.bind="acData"
+                            text.bind="textFromAutoComplete"
+                            value.bind="valueFromAutoComplete"
+                            placeholder="e.g., Anne Dodsworth"
+                            fields='{ "value": "Name" }'>
+            <ej-header-template>
+              <div class="header"> <span>Photo</span> <span class="info">Employee Info</span></div>
+            </ej-header-template>
+            <ej-item-template>
+              <div><img class="empImage" src="//ej2.syncfusion.com/demos/src/auto-complete/Employees/${Eimg}.png" alt="employee"/>
+                <div class="ename"> ${Name} </div><div class="job"> ${Designation} </div> <div class="job"> — <span>${Designation}</span></div></div>
+            </ej-item-template>
+          </ej-autocomplete>
+        </div>
+        <div>
+          <p>Text: ${textFromAutoComplete}</p>
+          <p>Value ${valueFromAutoComplete | jsonStringify}</p>
+        </div>
+    </div>
+    <hr>
+
+
+    <h2>Custom element "ej-button"</h2>
+    <ej-button primary="true" content.bind="message"></ej-button>
+    <ej-button primary.bind="isPrimary" content="message"></ej-button>
+
+    <h2>Custom element "ej-checkbox"</h2>
+    <ej-checkbox checked.two-way="isPrimary" label="${isPrimary}" disabled.two-way="isDisabled"></ej-checkbox>
+    <ej-checkbox checked.two-way="isDisabled" label="Disable checkbox"></ej-checkbox>
+    <h2>Custom element "ej-radio-button"</h2>
+    <div><ej-radio-button name="group1" position="After" label="Vasya" checked="true"></ej-radio-button></div>
+    <div><ej-radio-button name="group1" position="Before" css-class="e-info" label="Petya" disabled.bind="isDisabled"></ej-radio-button></div>
+
+    <div>
+      <form>
+        <h4>Products</h4>
+        <div repeat.for="product of products">
+          <ej-radio-button type="radio" enable-rtl.to-view="isRTL" name="group4" label="${product}" disabled.bind="isDisabled"
+                  value.bind="product" checked.bind="selectedProduct"></ej-radio-button>
+
+        </div>
+        <br>
+        Selected product: ${selectedProduct}
+        <br>
+        <ej-checkbox checked.two-way="isRTL" label="Enable RTL"></ej-checkbox>
+      </form>
+    </div>
+</template>

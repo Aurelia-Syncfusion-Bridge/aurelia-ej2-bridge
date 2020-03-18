@@ -1,0 +1,105 @@
+<template>
+  <div class="doc-body-content">
+    <div id="md-content" class="e-view">
+      <div id="md-cnt">
+        <h1 class="sidebar-heading">Introduction</h1>
+        
+        <p>Aurelia-Syncfusion-Bridge includes wrappers for Syncfusion-JavaScript widget’s, which act as the interface for both Aurelia frameworks and Syncfusion JavaScript widgets. This bridge is a structured, configurable collection of JavaScript classes which wrap Syncfusion JavaScript controls, presenting them in the form of Aurelia components.</p>
+
+        <p>
+          The Syncfusion Aurelia components are named with prefix ej to avoid conflicting with other library component and offers the following features.
+
+          <ul>
+            <li>Properties</li>
+            <li>Two-way binding</li>
+            <li>Event binding</li>
+            <li>Templates</li>
+          </ul>
+
+        </p>
+
+        <blockquote>
+          <p>
+            Those who are wish to directly getting started with Syncfusion Aurelia components navigate to
+            <a route-href="route: getting-started">here</a>.
+          </p>
+        </blockquote>
+
+        <div class="line"></div>
+
+        <h2 class="sidebar-heading">Properties</h2>
+
+        <p>
+          All the properties of Syncfusion JavaScript widget are defined as attributes for particular Aurelia component,
+          so you can easily set value to same widget properties directly in your HTML markup, as it documented in
+          API section of each of the controls.
+        </p>
+        <p>
+          For example: the <code>allowPaging</code>  property of <code>ej-grid</code> widget can be defined as like the
+          below code example.
+        </p>
+
+        <div class="gatsby-highlight" data-language="html">
+          <pre class="language-html">
+            <code class="language-html">&lt;ej-grid data-source.two-way="gridData" allow-paging="true"&gt;&lt;/ej-grid&gt;</code>
+          </pre>
+        </div>
+
+        <div class="line"></div>
+
+        <h2 class="sidebar-heading">Two-way binding</h2>
+
+        <p>
+          Two-way binding observes the property in model and updates the UI automatically.
+          The Syncfusion Aurelia component supports two-way binding for all the interactive properties.
+          For ex., <code>value</code> property in input components, <code>dataSource</code> in Grids etc.
+        </p>
+        <p>
+          The <code>dataSource</code> property of <code>ej-grid</code> widget can be defined as
+          two-way bindable property like the below code example.
+        </p>
+
+        <div class="gatsby-highlight" data-language="html">
+          <pre class="language-html">
+            <code class="language-html">&lt;ej-grid data-source.two-way="gridData" allow-paging="true"&gt;&lt;/ej-grid&gt;</code>
+          </pre>
+        </div>
+
+        <blockquote>
+          The <code>gridData</code> will be loaded from Aurelia view-model.
+        </blockquote>
+
+        <div class="line"></div>
+
+        <h2 class="sidebar-heading">Event binding</h2>
+
+
+        <div class="line"></div>
+
+        <h2 class="sidebar-heading">Templating</h2>
+      </div>
+    </div>
+    <div class="layout__RightToc" >
+      <div id="doc-right-toc" style="position: fixed; top: 128px;">
+        <span>Contents</span>
+        <ul>
+          <li class="doc-anchor-h2 select"><a router-ignore data-router-ignore href="#dependencies">Dependencies</a></li>
+          <li class="doc-anchor-h2"><a router-ignore data-router-ignore href="#setup-your-development-environment">Setup your
+              development environment</a></li>
+          <li class="doc-anchor-h2"><a router-ignore data-router-ignore href="#add-button-to-the-project">Add Button to the
+              project</a></li>
+          <li class="doc-anchor-h2"><a router-ignore data-router-ignore href="#adding-style-sheet-to-the-application">Adding Style
+              sheet to the Application</a></li>
+          <li class="doc-anchor-h2"><a router-ignore data-router-ignore href="#run-the-application">Run the application</a></li>
+          <li class="doc-anchor-h2"><a router-ignore data-router-ignore href="#change-button-type">Change Button type</a></li>
+          <li class="doc-anchor-h2"><a router-ignore data-router-ignore href="#see-also">See Also</a></li>
+        </ul>
+      </div> 
+    </div>
+      <button class="back-to-top" id="scroll-top" style="display: none;">
+        <span id="icon-move-top"></span>
+      </button>
+
+  </div>
+
+</template>

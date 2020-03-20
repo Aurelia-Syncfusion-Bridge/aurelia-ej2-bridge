@@ -7,7 +7,8 @@ export * from './textbox/index';
 export function configure(config: FrameworkConfiguration) {
 
     config.globalResources([
-      PLATFORM.moduleName('./textbox/ej-textbox')
+      PLATFORM.moduleName('./textbox/ej-textbox'),
+      PLATFORM.moduleName('./maskedtextbox/ej-masked-textbox')
     ]);
   
     if (!isRippleEnabled) {

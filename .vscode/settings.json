@@ -19,6 +19,7 @@
       "esnext",
       "fsevents",
       "lcovonly",
+      "maskedtextbox",
       "postversion",
       "prebuild",
       "predoc",

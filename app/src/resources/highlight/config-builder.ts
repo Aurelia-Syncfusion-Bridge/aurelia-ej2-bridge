@@ -20,7 +20,7 @@ export class ConfigBuilder {
     }
 
     setDefaultTheme() {
-        this.loader.loadText(PLATFORM.moduleName("highlight.js/styles/sf.css")).then(text => {
+        this.loader.loadText(PLATFORM.moduleName("highlight.js/styles/vs2015.css")).then(text => {
             let oldStyleHeader: Node = Hljs.styleHeader;
             Hljs.styleHeader = DOM.injectStyles(text);
             if (oldStyleHeader == null) {

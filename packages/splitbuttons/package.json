@@ -1,5 +1,5 @@
 {
-  "name": "@aurelia-ej2-bridge/inputs",
+  "name": "@aurelia-ej2-bridge/splitbuttons",
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "David Kossoglyad <david@logoui.co.il>",
@@ -39,8 +39,7 @@
     "prepare-release": "cross-env npm run test && npm run changelog && npm run build"
   },
   "dependencies": {
-    "@aurelia-ej2-bridge/base": "^0.0.2",
-    "@syncfusion/ej2-inputs": "^17.4.51",
+    "@aurelia-ej2-bridge/base": "^0.0.2",    
     "aurelia-binding": "^2.5.2"
   },
   "devDependencies": {

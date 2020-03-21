@@ -16,6 +16,7 @@ export function configure(aurelia: Aurelia) {
     .plugin(PLATFORM.moduleName('aurelia-dynamic-html'))
     .plugin(PLATFORM.moduleName('@aurelia-ej2-bridge/buttons'))
     .plugin(PLATFORM.moduleName('@aurelia-ej2-bridge/inputs'))
+    .plugin(PLATFORM.moduleName('@aurelia-ej2-bridge/splitbuttons'))
     .plugin(PLATFORM.moduleName('aurelia-validation'))
     ;
 

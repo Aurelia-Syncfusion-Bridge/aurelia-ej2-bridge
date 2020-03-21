@@ -65,6 +65,12 @@
         "description": "",
         "attributes": [],
         "references": []
+      },
+      {
+        "name": "ej-progress-button",
+        "description": "",
+        "attributes": [],
+        "references": []
       }
     ]
   }

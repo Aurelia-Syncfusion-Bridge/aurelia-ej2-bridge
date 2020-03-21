@@ -91,7 +91,8 @@ module.exports = ({ production } = {}, {extractCss, analyze, tests, hmr, port, h
       ...([
         'base',
         'buttons',
-        'inputs'          
+        'inputs',
+        'splitbuttons'          
       ].reduce((map, packageName) => {
         const mappedPackagedName = `@aurelia-ej2-bridge/${packageName}`;
         map[mappedPackagedName] = path.resolve(__dirname, `../packages/${packageName}/src`);

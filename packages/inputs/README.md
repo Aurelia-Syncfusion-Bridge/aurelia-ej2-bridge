@@ -1,11 +1,7 @@
-# `@aurelia-ej2-bridge/inputs`
+# Aurelia Syncfusion Bridge (Ej2 Components)
 
-> TODO: description
+![npm (scoped)](https://img.shields.io/npm/v/@aurelia-ej2-bridge/buttons)
 
-## Usage
+A set of [Aurelia](http://aurelia.io) wrappers for [Syncfusion Essential Studio for JavaScript](https://www.syncfusion.com/products/javascript)
 
-```
-const inputs = require('@aurelia-ej2-bridge/inputs');
-
-// TODO: DEMONSTRATE API
-```
+A package wraps Syncfusion JavaScript UI Components (Essential JS 2) Button, CheckBox, RadioButton and Switch.

@@ -3,7 +3,8 @@
   "packages": [
     "packages/base",
     "packages/buttons",
-    "packages/inputs"
+    "packages/inputs",
+    "packages/splitbuttons"
   ],
   "version": "0.0.2"
 }

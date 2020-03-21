@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": false,
+    "sourceMap": true
+  },
+  "exclude": [
+    ".vscode",
+    "dist",
+    "doc",
+    "node_modules",
+    "test",
+    "karma.conf.ts"
+  ]
+}

@@ -1,9 +1,10 @@
 import { EjButtonModel } from './ej-button-model';
-import { bindable, autoinject, inlineView } from 'aurelia-framework';
+import { bindable, autoinject, inlineView, customElement } from 'aurelia-framework';
 import { Button, ButtonModel } from '@syncfusion/ej2-buttons';
 import { enableRipple, isRippleEnabled } from '@syncfusion/ej2-base';
 
 @autoinject
+@customElement('ej-button')
 @inlineView('<template><button></button></template>')
 export class EjButton extends EjButtonModel implements ButtonModel {
 

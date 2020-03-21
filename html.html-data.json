@@ -2,21 +2,69 @@
     "version": 1.1,
     "tags": [
       {
-        "name": "ej-checkbox",
-        "description": "My button. You should use it as in `<my-button type='alert'></mybutton>`.",
+        "name": "ej-button",
+        "description": "The Button is a graphical user interface element that triggers an event on its click action. It can contain a text, an image, or both. Usage: `<ej-button content='ClickMe!'></ej-button>`",
         "attributes": [
           {
-            "name": "type",
-            "description": "My button type",
-            "values": [{ "name": "alert" }]
+            "name": "content",
+            "description": "Defines the text content of the Button element.",
+            "values": [{ "name": "string" }]
           }
         ],
         "references": [
           {
-            "name": "Bootstrap buttons",
-            "url": "https://getbootstrap.com/docs/4.0/components/buttons/"
+            "name": "Buttons",
+            "url": "https://ej2.syncfusion.com/documentation/api/button"
           }
         ]
+      },
+      {
+        "name": "ej-checkbox",
+        "description": "",
+        "attributes": [],
+        "references": []
+      },
+      {
+        "name": "ej-radio-button",
+        "description": "",
+        "attributes": [],
+        "references": []
+      },
+      {
+        "name": "ej-switch",
+        "description": "",
+        "attributes": [],
+        "references": []
+      },
+      {
+        "name": "ej-color-picker",
+        "description": "",
+        "attributes": [],
+        "references": []
+      },
+      {
+        "name": "ej-masked-textbox",
+        "description": "",
+        "attributes": [],
+        "references": []
+      },
+      {
+        "name": "ej-numeric-textbox",
+        "description": "",
+        "attributes": [],
+        "references": []
+      },
+      {
+        "name": "ej-slider",
+        "description": "",
+        "attributes": [],
+        "references": []
+      },
+      {
+        "name": "ej-textbox",
+        "description": "",
+        "attributes": [],
+        "references": []
       }
     ]
   }

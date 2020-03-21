@@ -9,7 +9,8 @@ export function configure(config: FrameworkConfiguration) {
     config.globalResources([
       PLATFORM.moduleName('./textbox/ej-textbox'),
       PLATFORM.moduleName('./maskedtextbox/ej-masked-textbox'),
-      PLATFORM.moduleName('./numerictextbox/ej-numerictextbox')
+      PLATFORM.moduleName('./numerictextbox/ej-numerictextbox'),
+      PLATFORM.moduleName('./color-picker/ej-color-picker')
     ]);
   
     if (!isRippleEnabled) {

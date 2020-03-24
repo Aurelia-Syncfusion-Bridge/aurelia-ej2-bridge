@@ -8,6 +8,7 @@ export function configure(config: FrameworkConfiguration) {
 
     config.globalResources([
         PLATFORM.moduleName('./barcode/ej-barcode'),
-        PLATFORM.moduleName('./datamatrix/ej-datamatrix')
+        PLATFORM.moduleName('./datamatrix/ej-datamatrix'),
+        PLATFORM.moduleName('./qrcode/ej-qrcode')
     ]);
 }

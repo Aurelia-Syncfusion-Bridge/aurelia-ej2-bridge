@@ -7,9 +7,12 @@
       "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     ],
     "cSpell.words": [
+      "Barcod",
       "Gitter",
       "Hljs",
       "Syncfusion",
+      "barcode",
+      "barcodegenerator",
       "blazor",
       "browserslist",
       "chunkhash",

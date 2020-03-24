@@ -89,6 +89,7 @@ module.exports = ({ production } = {}, {extractCss, analyze, tests, hmr, port, h
       )),
       // alias all packages to src code
       ...([
+        'barcodegenerator',
         'base',
         'buttons',
         'inputs',

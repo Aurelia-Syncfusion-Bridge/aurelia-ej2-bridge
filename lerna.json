@@ -4,7 +4,8 @@
     "packages/base",
     "packages/buttons",
     "packages/inputs",
-    "packages/splitbuttons"
+    "packages/splitbuttons",
+    "packages/barcodegenerator"
   ],
   "version": "0.0.2"
 }

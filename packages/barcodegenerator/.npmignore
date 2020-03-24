@@ -1,0 +1,9 @@
+.rollupcache
+test
+.npmignore
+.npmrc
+karma.conf.ts
+rollup.config.js
+tsconfig-test.json
+tsconfig.json
+coverage
